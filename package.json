@@ -16,6 +16,7 @@
     "dev:backend": "npm run dev --workspace backend",
     "build": "npm run build --workspace frontend && npm run build --workspace backend",
     "start": "npm run start --workspace backend",
+    "build:pages": "npm run build --workspace frontend -- --mode pages",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit -p frontend/tsconfig.json && tsc --noEmit -p backend/tsconfig.json && tsc --noEmit -p tsconfig.json",
     "test": "tsx --test tests/*.test.ts",

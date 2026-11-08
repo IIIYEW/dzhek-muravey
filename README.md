@@ -48,7 +48,9 @@ npm run test:smoke -- http://127.0.0.1:4000
 
 Express отдаёт `frontend/dist` и API с одного адреса. Порт задаётся через `PORT`, по умолчанию — 4000. Прямые ссылки на страницы обрабатываются SPA fallback; отсутствующие файлы возвращают 404.
 
-Для временного показа подготовлен `render.yaml`. Порядок публикации и ограничения бесплатного тарифа: [DEPLOYMENT.md](docs/DEPLOYMENT.md).
+Для бесплатного показа интерфейса на GitHub Pages: `npm run build:pages` и [инструкция публикации](docs/GITHUB_PAGES.md). Workflow публикует frontend из `master`; сервер и Avito в этой демонстрации не запускаются. Обычная сборка с Express сохранена.
+
+Альтернативное размещение всего приложения на Render описано в [DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Каталог и Avito
 

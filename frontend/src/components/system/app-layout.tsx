@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import { Outlet, useLocation, useNavigation } from 'react-router-dom';
+import { Link, Outlet, useLocation, useNavigation } from 'react-router-dom';
 import { SiteHeader } from '@/components/layout/header';
 import { SiteFooter } from '@/components/layout/footer';
 import { PageSeo } from '@/components/system/page-seo';
@@ -14,9 +14,9 @@ export function AppLayout() {
   return (
     <>
       <PageSeo />
-      <a className="skip-link" href="#content">
+      <Link className="skip-link" to={{ pathname, hash: '#content' }}>
         К содержимому
-      </a>
+      </Link>
       <SiteHeader />
       {navigation.state !== 'idle' && (
         <div className="navigation-progress" role="status">

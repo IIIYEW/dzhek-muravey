@@ -2,7 +2,8 @@ import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
 import { fileURLToPath } from 'node:url';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => ({
+  base: mode === 'pages' ? '/dzhek-muravey/' : '/',
   plugins: [tailwindcss()],
   resolve: {
     alias: {
@@ -17,4 +18,4 @@ export default defineConfig({
       '/sitemap.xml': 'http://127.0.0.1:4000',
     },
   },
-});
+}));

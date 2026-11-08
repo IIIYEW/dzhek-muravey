@@ -38,7 +38,9 @@ export function PageSeo({ title, description }: { title?: string; description?: 
       <meta property="og:type" content="website" />
       {canonical && <link rel="canonical" href={canonical} />}
       {canonical && <meta property="og:url" content={canonical} />}
-      {!defaults && !title && <meta name="robots" content="noindex" />}
+      {(import.meta.env.MODE === 'pages' || (!defaults && !title)) && (
+        <meta name="robots" content="noindex" />
+      )}
     </>
   );
 }

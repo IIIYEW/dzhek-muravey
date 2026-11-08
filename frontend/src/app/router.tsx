@@ -1,4 +1,4 @@
-import { createBrowserRouter, useRevalidator } from 'react-router-dom';
+import { createBrowserRouter, createHashRouter, useRevalidator } from 'react-router-dom';
 import { AppLayout } from '@/components/system/app-layout';
 import { GlobalError } from '@/components/system/global-error';
 import { NotFoundPage } from '@/components/system/not-found-page';
@@ -23,7 +23,9 @@ function RouteError() {
 
 // Единая карта маршрутов; общий макет сохраняется при переходах внутри сайта.
 // Сигнал отмены loader прекращает запрос при уходе со страницы.
-export const router = createBrowserRouter([
+// На Pages нет SPA fallback: hash-маршруты переживают обновление страницы.
+const createRouter = import.meta.env.MODE === 'pages' ? createHashRouter : createBrowserRouter;
+export const router = createRouter([
   {
     Component: AppLayout,
     children: [
