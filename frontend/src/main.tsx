@@ -8,6 +8,7 @@ import './styles/component-overrides.css';
 import './styles/design-overrides.css';
 // Настройки читаемости подключаются последними, не меняя базовый дизайн.
 import './styles/accessibility.css';
+import './styles/background.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -1,0 +1,22 @@
+/* Узор только на светлых поверхностях: фирменные блоки и карточки не меняем. */
+body,
+.soft,
+.page-heading {
+  background-color: #faf9f6;
+  background-image: url('/assets/appliance-pattern.svg');
+  background-repeat: repeat;
+  background-size: 360px 320px;
+}
+
+.soft,
+.page-heading {
+  background-color: #f5f4f0;
+}
+
+@media print {
+  body,
+  .soft,
+  .page-heading {
+    background-image: none;
+  }
+}

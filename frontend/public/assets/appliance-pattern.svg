@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="320" viewBox="0 0 360 320" fill="none" stroke="#562e88" stroke-opacity="0.085" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+  <!-- Неброский повторяющийся узор: бытовая техника и инструменты. -->
+  <g transform="translate(24 18) rotate(-10 16 22)">
+    <rect x="3" y="1" width="26" height="42" rx="3"/>
+    <path d="M3 16h26M8 8v4m0 10v8M7 43v3m18-3v3"/>
+  </g>
+  <g transform="translate(114 35) rotate(8 18 18)">
+    <rect x="1" y="1" width="34" height="36" rx="4"/>
+    <circle cx="18" cy="23" r="10"/>
+    <path d="M2 10h32M7 6h5m14 0h2M10 23c4-5 10 5 16 0"/>
+  </g>
+  <g transform="translate(208 16) rotate(-15 20 20)">
+    <path d="M2 5h25v14H2zM27 9h10m-10 6h8M10 19l-3 17h12l4-17M6 36h15v6H6zM4 9h6m-6 5h6"/>
+  </g>
+  <g transform="translate(300 42) rotate(12 15 17)">
+    <path d="M5 12h23v19H5zM28 16h5v10h-5M5 17H1v8h4M8 12V7a7 7 0 0 1 14 0v5M11 31v3m12-3v3"/>
+  </g>
+  <g transform="translate(58 120) rotate(12 19 16)">
+    <rect x="1" y="1" width="38" height="25" rx="3"/>
+    <path d="M10 33h20M20 26v7M6 21h28"/>
+  </g>
+  <g transform="translate(166 116) rotate(-12 15 20)">
+    <path d="M10 1h10l3 16-3 10H10L7 17zM15 27v17m-3 0h6M11 7h8m-8 5h8"/>
+  </g>
+  <g transform="translate(270 132) rotate(8 20 14)">
+    <rect x="1" y="1" width="40" height="27" rx="4"/>
+    <rect x="5" y="5" width="25" height="19" rx="2"/>
+    <circle cx="35" cy="9" r="1"/>
+    <path d="M34 17h2m-2 5h2M6 28v3m29-3v3"/>
+  </g>
+  <g transform="translate(18 224) rotate(-12 18 17)">
+    <path d="M3 28h35L27 12H10L3 28zM12 12V5h15v7M4 32h34M19 18h8"/>
+  </g>
+  <g transform="translate(112 230) rotate(10 18 20)">
+    <path d="M12 2a10 10 0 0 0 5 18L34 37l5-5-17-17A10 10 0 0 0 20 2l-1 9-7 1z"/>
+    <circle cx="34" cy="32" r="1"/>
+  </g>
+  <g transform="translate(211 220) rotate(-8 16 22)">
+    <rect x="3" y="1" width="26" height="42" rx="4"/>
+    <path d="M12 6h8M13 38h6"/>
+  </g>
+  <g transform="translate(301 230) rotate(14 18 18)">
+    <path d="M2 28h31V14H2zM8 14V8h19v6M7 21h6m11 0h4M6 28v5m23-5v5M14 8V3h7v5"/>
+  </g>
+</svg>
