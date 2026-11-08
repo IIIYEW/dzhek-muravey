@@ -1,0 +1,39 @@
+node_modules/
+**/dist/
+.next/
+out/
+.env*
+!.env.example
+.vercel/
+.sharrowkin/
+*.tsbuildinfo
+next-env.d.ts
+*.log
+
+# Локальные настройки и результаты проверок.
+.vscode/
+.idea/
+coverage/
+playwright-report/
+test-results/
+*.pem
+*.key
+
+# История работ и инструменты макета остаются локально.
+assets-manifest.md
+docs/file-naming.md
+docs/final-structure.md
+docs/MIGRATION_PLAN.md
+docs/MIGRATION_RESULTS.md
+docs/project-tree.txt
+docs/refactoring.md
+scripts/figma-audit.mjs
+scripts/figma-socket.mjs
+scripts/download-font.mjs
+
+# Неиспользуемые иконки стартового шаблона.
+frontend/public/icons/file.svg
+frontend/public/icons/globe.svg
+frontend/public/icons/next.svg
+frontend/public/icons/vercel.svg
+frontend/public/icons/window.svg

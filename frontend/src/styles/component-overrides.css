@@ -1,0 +1,240 @@
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 14px;
+}
+.desktop-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+.mobile-menu {
+  display: none;
+}
+.mobile-menu summary {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  color: var(--purple);
+  font-weight: 700;
+  list-style: none;
+}
+.mobile-menu summary::-webkit-details-marker {
+  display: none;
+}
+.mobile-menu summary:focus-visible {
+  outline: 3px solid #9f78c2;
+  outline-offset: 4px;
+}
+.mobile-menu nav {
+  position: absolute;
+  top: 88px;
+  left: 0;
+  right: 0;
+  padding: 16px 24px 24px;
+  background: white;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu nav a {
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+}
+.mobile-menu[open] summary {
+  border-bottom: 2px solid var(--purple);
+}
+@media (max-width: 1024px) {
+  .desktop-nav {
+    gap: 16px;
+    font-size: 13px;
+  }
+}
+@media (max-width: 800px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+.brand-logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+.header-inner {
+  min-height: 96px;
+}
+.site-footer .brand {
+  background: #fff;
+  border-radius: 8px;
+  padding: 8px;
+}
+.site-footer .brand-logo {
+  width: 96px;
+  height: 96px;
+}
+.hero {
+  padding: 64px 0;
+}
+.hero-grid {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.hero-grid > div:first-child {
+  max-width: 860px;
+}
+.hero h1 {
+  max-width: 850px;
+  font-size: clamp(40px, 5vw, 68px);
+}
+.hero-copy {
+  max-width: 640px;
+}
+.store-hero {
+  margin: 0;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.store-hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1600/441;
+  object-fit: cover;
+}
+.store-hero figcaption {
+  font-size: 13px;
+  padding: 12px 20px;
+  color: var(--muted);
+}
+.catalog-unavailable {
+  margin-top: 32px;
+  padding: 56px 32px;
+}
+.catalog-unavailable > svg {
+  color: var(--purple);
+  margin: 0 auto 24px;
+}
+.catalog-unavailable p {
+  max-width: 620px;
+  margin: 16px auto 24px;
+}
+.catalog-unavailable .actions {
+  justify-content: center;
+}
+.catalog-intro {
+  max-width: 620px;
+  color: var(--muted);
+  font-size: 18px;
+  margin: 24px 0;
+}
+.about-photo {
+  margin: 40px 0;
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+  max-height: 560px;
+  object-fit: cover;
+  object-position: center 40%;
+  border-radius: 12px;
+}
+.about-photo figcaption {
+  color: var(--muted);
+  font-size: 14px;
+  padding-top: 12px;
+}
+.attributes > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+.attributes dd {
+  margin: 0;
+}
+.gallery-thumbs {
+  flex-wrap: wrap;
+}
+.gallery-main > .photo-empty {
+  width: 100%;
+  border-radius: 12px;
+}
+.contact-grid > * {
+  min-width: 0;
+}
+.footer-note {
+  color: #bcb6c0;
+}
+.catalog-unavailable h2 {
+  line-height: 1.2;
+}
+.prose h1 {
+  overflow-wrap: anywhere;
+}
+@media (max-width: 800px) {
+  .header-inner {
+    min-height: 88px;
+  }
+  .brand-logo {
+    width: 72px;
+    height: 72px;
+  }
+  .main-nav {
+    top: 88px;
+  }
+  .hero {
+    padding: 40px 0;
+  }
+  .store-hero img {
+    aspect-ratio: 16/7;
+    object-position: center;
+  }
+  .catalog-unavailable {
+    padding: 32px 20px;
+  }
+  .catalog-unavailable .actions {
+    flex-direction: column;
+  }
+  .catalog-unavailable h2 {
+    font-size: 28px;
+  }
+  .about-photo img {
+    max-height: 480px;
+  }
+  .footer-grid {
+    gap: 24px;
+  }
+  .hero-copy {
+    font-size: 18px;
+  }
+}
+@media (max-width: 380px) {
+  h1,
+  .hero h1 {
+    font-size: 38px;
+  }
+  .container {
+    width: calc(100% - 32px);
+  }
+  .contact-panel {
+    padding: 20px;
+  }
+  .contact-phone {
+    font-size: 20px;
+  }
+  .cta {
+    padding: 24px;
+  }
+  .cta h2 {
+    font-size: 28px;
+  }
+}

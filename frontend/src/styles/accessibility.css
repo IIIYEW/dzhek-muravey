@@ -1,0 +1,206 @@
+body {
+  font-size: 18px;
+}
+.main-nav,
+.eyebrow,
+.hero-caption,
+.filters label,
+.product-meta,
+.footer-grid a,
+.footer-grid span {
+  font-size: 16px;
+}
+.source-note {
+  font-size: 14px;
+}
+.brand-tagline strong,
+.badge,
+.breadcrumbs,
+.contact-list dt,
+.footer-bottom {
+  font-size: 15px;
+}
+.brand-tagline > span {
+  font-size: 14px;
+}
+.desktop-nav,
+.benefit p,
+.steps-grid p,
+.category-tile strong,
+.footer-label {
+  font-size: 17px;
+}
+.hero-copy,
+.section-copy,
+.about-copy,
+.page-hero p,
+.catalog-intro,
+.contact-list dd {
+  font-size: 20px;
+}
+.hero-note,
+.footer-note,
+.map-panel span {
+  font-size: 16px;
+}
+.compact .contact-list dd {
+  font-size: 18px;
+}
+.price {
+  font-size: 22px;
+}
+.detail-price {
+  font-size: 34px;
+}
+.detail-copy .price {
+  font-size: 32px;
+}
+.lead {
+  font-size: 24px;
+}
+.contact-phone {
+  font-size: 30px;
+}
+.store-hero figcaption {
+  font-size: 15px;
+}
+.about-photo figcaption {
+  font-size: 16px;
+}
+
+/* Обмен использует тот же фон, что первый экран и страница «О магазине». */
+.purple-section,
+.exchange-hero {
+  background: var(--purple-dark);
+}
+
+/* Переход задан в обычном состоянии: подсветка плавно появляется и исчезает. */
+a,
+button,
+summary,
+input,
+select,
+.category-tile,
+.product-card {
+  transition:
+    color 200ms ease-out,
+    background-color 200ms ease-out,
+    border-color 200ms ease-out,
+    box-shadow 200ms ease-out,
+    transform 200ms ease-out,
+    opacity 200ms ease-out;
+}
+a,
+a:hover,
+a:focus-visible,
+a:active,
+.map-panel span {
+  text-decoration: none;
+}
+a:not(.button):not(.brand):not(.category-tile):not(.product-card a):hover {
+  color: var(--purple);
+}
+.site-footer a:not(.brand):hover {
+  color: var(--lime);
+}
+.category-tile:hover,
+.search-link:hover,
+.map-panel:hover {
+  background-color: #eee9f2;
+  border-color: var(--purple);
+}
+.button.secondary:hover {
+  background-color: #562e8814;
+}
+.hero .button.secondary:hover,
+.purple-section .button.secondary:hover,
+.page-brand-hero .button.secondary:hover {
+  background-color: #ffffff1f;
+}
+.mobile-menu summary:hover {
+  color: var(--purple-dark);
+}
+.gallery-thumbs button:hover {
+  background-color: #eee9f2;
+}
+.gallery-thumbs button[aria-pressed='true']:hover {
+  background-color: var(--purple-dark);
+}
+
+@media (max-width: 1250px) {
+  .category-tile strong {
+    font-size: 15px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1150px) {
+  .header-actions .search-link {
+    display: none;
+  }
+  .desktop-nav {
+    gap: 12px;
+  }
+  .header-call {
+    padding-inline: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .main-nav {
+    font-size: 15px;
+  }
+}
+@media (max-width: 800px) {
+  .hero-copy {
+    font-size: 19px;
+  }
+  .section-heading > a {
+    font-size: 16px;
+  }
+  .contact-list dd {
+    font-size: 19px;
+  }
+  .main-nav {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 20px;
+  }
+  .contact-phone {
+    font-size: 26px;
+  }
+}
+@media (max-width: 480px) {
+  .header-call {
+    font-size: 15px;
+  }
+  .mobile-menu summary,
+  .hero .actions .button,
+  .category-tile strong,
+  .accepted-types span {
+    font-size: 16px;
+  }
+  .footer-bottom,
+  .hero-caption {
+    font-size: 14px;
+  }
+  .section-copy {
+    font-size: 19px;
+  }
+  .contact-phone {
+    font-size: 24px;
+  }
+}
+@media (max-width: 380px) {
+  .contact-phone {
+    font-size: 22px;
+  }
+}
+/* Настройки ОС имеют приоритет над декоративным движением. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+  }
+}

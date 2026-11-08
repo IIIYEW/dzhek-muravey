@@ -1,0 +1,17 @@
+# Один бесплатный сервис отдаёт сайт и REST API с общего адреса.
+services:
+  - type: web
+    name: dzhek-muravey-preview
+    runtime: node
+    plan: free
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    autoDeploy: false
+    envVars:
+      - key: NODE_VERSION
+        value: 24.15.0
+      - key: NODE_ENV
+        value: production
+# SITE_URL не задан: временная копия запрещает индексацию через robots.txt.
+# Ключи Avito для демонстрации не нужны; источник остаётся отключённым.
